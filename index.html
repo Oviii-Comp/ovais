@@ -3,82 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Software Engineer</title>
+    <title>Ovais Hassan Mir - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Ovais</div>
+        <div class="logo">
+            <span class="logo-text">Ovais</span>
+            <div class="logo-dot"></div>
+        </div>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="free.html">Free</a>
-            <a href="paid.html">Paid</a>
+            <a href="index.html" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="free.html" class="nav-link">
+                <i class="fas fa-gift"></i>
+                <span>Free</span>
+            </a>
+            <a href="paid.html" class="nav-link">
+                <i class="fas fa-star"></i>
+                <span>Paid</span>
+            </a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
     <main class="container">
         <section class="hero">
-            <div class="intro">
-                <span>Hello! I Am</span>
-                <span class="name">Ovais Hassan Mir</span>
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
             </div>
-            
+
+            <div class="intro">
+                <span class="greeting">Hello! I Am</span>
+                <span class="name">Ovais Hassan Mir</span>
+                <div class="intro-line"></div>
+            </div>
+
             <div class="hero-content">
-                <div class="avatar">
-                    <img src="avatar.png" alt="Avatar">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="avatar.png" alt="Ovais Hassan Mir">
+                        <div class="avatar-ring"></div>
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Available for work</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-text">
-                    <p class="tagline">A Designer who</p>
-                    <h1>Judges a book<br>by its <span class="highlight">Cover</span>...</h1>
-                    <p class="subtitle">Because if the cover does not impress you what else can?</p>
+                    <p class="tagline">A Software Engineer who</p>
+                    <h1>Crafts digital<br>experiences with <span class="highlight">precision</span></h1>
+                    <p class="subtitle">Transforming ideas into elegant, functional solutions that make a difference.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get in Touch
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="about">
-            <h2>I'm a Software Developer</h2>
-            <p class="current-role">Currently I'm a Software Engineer at <span class="company">Studio Tech 69</span></p>
-            <p class="description">
-                A self-taught UI/UX designer, functioning in the industry for 3+ years now.
-                I make meaningful and delightful digital products that create an equilibrium
-                between user needs and business goals.
-            </p>
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>I'm a Software Developer</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="current-role">Currently I'm a Software Engineer at <span class="company">Studio Tech 69</span></p>
+                    <p class="description">
+                        A passionate full-stack developer with 3+ years of experience creating innovative digital solutions.
+                        I specialize in building scalable applications that bridge the gap between user experience and
+                        technical excellence, always focusing on clean code and modern development practices.
+                    </p>
+                    <div class="skills-preview">
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">Node.js</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">TypeScript</div>
+                        <div class="skill-tag">AWS</div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="work-experience">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="experience-grid">
                 <div class="experience-card">
-                    <div class="card-icon">A</div>
-                    <h3>Kashmir Railway 24</h3>
-                    <p>Taking Railway Journey to the next level.</p>
-                    <span class="duration">Preview</span>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="card-badge">Web App</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kashmir Railway 24</h3>
+                        <p>A modern railway booking platform with real-time tracking and seamless user experience.</p>
+                        <div class="tech-stack">
+                            <span class="tech">React</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                        <button class="card-btn secondary">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </button>
+                    </div>
                 </div>
+
                 <div class="experience-card">
-                    <div class="card-icon">🌙</div>
-                    <h3>Ov Weather App</h3>
-                    <p>That Gives You The Precise Weather Information.</p>
-                    <span class="duration">Preview</span>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="card-badge">Mobile App</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ov Weather App</h3>
+                        <p>Precise weather forecasting app with beautiful UI and location-based predictions.</p>
+                        <div class="tech-stack">
+                            <span class="tech">React Native</span>
+                            <span class="tech">API Integration</span>
+                            <span class="tech">Redux</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                        <button class="card-btn secondary">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </button>
+                    </div>
                 </div>
+
                 <div class="experience-card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Owais Hassan Mir</h3>
-                    <p>Taking mobile banking to the next level</p>
-                    <span class="duration">UI/UX DESIGN</span>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="card-badge">FinTech</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Banking Solution</h3>
+                        <p>Next-generation mobile banking platform with advanced security and intuitive design.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Flutter</span>
+                            <span class="tech">Firebase</span>
+                            <span class="tech">Blockchain</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Case Study
+                        </button>
+                        <button class="card-btn secondary">
+                            <i class="fas fa-eye"></i>
+                            Preview
+                        </button>
+                    </div>
                 </div>
+
                 <div class="experience-card">
-                    <div class="card-icon">💎</div>
-                    <h3>My New App</h3>
-                    <p>This is an app for the people who want to learn technology</p>
-                    <span class="duration">CASE STUDY</span>
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-badge">EdTech</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Learning Platform</h3>
+                        <p>Interactive learning platform designed to make technology education accessible and engaging.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Vue.js</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </button>
+                        <button class="card-btn secondary">
+                            <i class="fas fa-file-alt"></i>
+                            Case Study
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="cta">
-            <p>You Can <span class="highlight">Hire Me</span> team</p>
-                    <div class="footer-logo">O</div>
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to bring your ideas to life?</h2>
+                    <p>Let's collaborate and create something amazing together. I'm always excited to work on new challenges.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary large">
+                        <i class="fas fa-handshake"></i>
+                        Hire Me
+                    </button>
+                    <button class="btn btn-outline large">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule a Call
+                    </button>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ovais@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/ovais</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/ovais</span>
+                </div>
+            </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">O</span>
+                    <div class="logo-pulse"></div>
+                </div>
+                <p class="footer-text">© 2024 Ovais Hassan Mir. Crafted with passion and precision.</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
