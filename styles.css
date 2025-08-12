@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b5cf6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8b5cf6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 50px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+.intro span {
+    display: block;
+    font-size: 18px;
+}
+
+.name {
+    color: #8b5cf6;
+    font-weight: bold;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #8b5cf6, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.tagline {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #8b5cf6;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.current-role {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.company {
+    color: #8b5cf6;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.work-experience {
+    margin-bottom: 100px;
+}
+
+.work-experience h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.experience-card {
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: #8b5cf6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.experience-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.duration {
+    font-size: 12px;
+    color: #8b5cf6;
+    font-weight: bold;
+}
+
+.cta {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cta-subtitle {
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+.footer-logo {
+    font-size: 48px;
+    color: #8b5cf6;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        padding: 20px;
+    }
+}
