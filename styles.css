@@ -758,7 +758,6 @@ body::before {
     text-align: center;
     padding: 60px 20px;
     border-top: 1px solid var(--border-color);
-    background: var(--background-glass);
     backdrop-filter: blur(20px);
 }
 
